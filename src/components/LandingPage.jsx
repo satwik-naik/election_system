@@ -8,7 +8,10 @@ export default function LandingPage() {
 
         <div className='max-w-[1340px] mx-auto h-[80vh]  flex text-center justify-center'>
            <div className='flex  flex-col items-center justify-center'>
-              <button className='bg-black text-white  px-10 py-5 rounded-lg'>Sign in using OR code </button>
+              <button className='bg-black text-white  px-10 py-5 rounded-lg'
+              onClick={()=>{
+                window.location.href="http://localhost:3000/qr"              
+              }}>Sign in using OR code </button>
               <p className='my-5'>OR</p>
               <button className='bg-black text-white  px-10 py-5 rounded-lg' onClick={()=>{
                 window.location.href="http://localhost:3000/v-id"
