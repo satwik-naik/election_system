@@ -4,6 +4,7 @@ import "./index.css"
 import VoterId from "./components/VoterId";
 import Voteing from "./components/Voteing_page";
 import Scanner from "./components/Scanner";
+import OTP from "./components/OTP";
 function App() {
   return (
 <>
@@ -13,7 +14,7 @@ function App() {
       <Route path='/v-id' element={<VoterId/>}/>
     <Route path='/v-id/vote' element={<Voteing/>}/>
      <Route path="/qr" element={<Scanner/>}/>
-     {/* <Route path="/otp" element={<OTP/>}/> */}
+     <Route path="/otp" element={<OTP/>}/>
     </Routes>
   </BrowserRouter>  
 </>  
